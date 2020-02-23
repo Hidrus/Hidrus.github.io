@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(86, 71, 126);
+    font-family: 'Roboto', sans-serif;
+ }
+
+ header {
+     text-align: center;
+     color: rgb(134, 202, 230);
+     border: 1px solid, rgb(44, 68, 68);
+     background-color: rgb(70, 139, 139);
+     border-radius: 7px;
+     margin: 0;
+     width: 100%;
+     }
