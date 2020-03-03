@@ -5,7 +5,9 @@
 }
 
 body {
-    background-color: #FFF8DC;
+    background-image: linear-gradient(to right, #434343 0%, black 100%); 
+ background-blend-mode: multiply,multiply;
+    background-blend-mode: multiply,multiply;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
