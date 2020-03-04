@@ -5,13 +5,20 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #434343 0%, black 100%); 
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); 
+    background-blend-mode: multiply,multiply; 
     background-blend-mode: multiply,multiply;
     background-blend-mode: multiply,multiply;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     color: white;
+    
+}
+
+.carpa {
+    color:rgb(75, 24, 62) ;
+    
     
 }
 
