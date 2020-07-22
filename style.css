@@ -5,25 +5,43 @@
 }
 
 body {
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); 
-    background-blend-mode: multiply,multiply; 
-    background-blend-mode: multiply,multiply;
-    background-blend-mode: multiply,multiply;
+    background-color: #a6b1e1;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: #413c69;
     
+}
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#c3bef0;
+    list-style:none;
+    position: absolte;
+    padding-right: ;
+}
+
+#menu ul li {
+     display: inline; 
+     padding: 3px 15px;
+     display: inline-block;
+     text-decoration: none;
+}
+
+#menu ul li a:hover {
+    background-color:#cadefc;
+    color: #6D6D6D;
 }
 
 .carpa {
-    color:rgb(75, 24, 62) ;
-    
-    
+    color:#552244 ;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .gandalfo {
-    position: fixed;
+    position: absolute;
     top: 3%;
     right: 3%;
     margin: 0 auto;
@@ -31,7 +49,7 @@ body {
     height: 200px;
     border-radius: 50%;
     transition: all 100ms;
-    border: #222 solid 4px;
+    border: #596157 solid 4px;
     border-radius: 50%;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -40,24 +58,24 @@ body {
 .description {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 40px;
     flex: 1;
-    text-align: center;
+    text-align: justify;
 }
 
 .description strong {
     margin: 10px;
     font-size: 50px;
     animation-name: colorchange;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
 @keyframes colorchange {
-    0% {color: red}
-    50% {color: lightcoral}
-    75% {color: lightsalmon}
-    100% {color: red}
+    0% {color: #413c69}
+    50% {color: #524fa3}
+    100% {color: #413c69}
+
 }
 
 .description p {
@@ -65,17 +83,31 @@ body {
     line-height: 30px;
 }
 
-.eu {
-    margin: 0 auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+.description h1, .description strong, .description .carpa, .description h2 {
+    text-align: center;
     padding: 20px;
 }
 
+.description h1 {
+    padding-bottom: 0;
+    z-index: 1;
+}
+
+.description strong {
+    padding-top: 0;
+}
+
+.eu {
+    margin: 0 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: rgb(65, 7, 65) 5px solid;
+}
+
 .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     flex: 1;
     height: 92vh;
     font-size: 18px;
@@ -85,10 +117,16 @@ body {
 }
 
 footer {
-    background-color: #333;
+    background-color: #111;
     color: #FFF;
     padding: 20px;
     margin-top: auto;
     margin-bottom: 0;
     text-align: center;
+}
+
+.nome {
+    justify-content: center;
+    display: flex;
+    border-bottom: #FFF solid 2px;
 }
