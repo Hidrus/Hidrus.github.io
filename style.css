@@ -41,7 +41,7 @@ body {
 }
 
 .gandalfo {
-    position: absolute;
+    position: left;
     top: 3%;
     right: 3%;
     margin: 0 auto;
@@ -102,7 +102,7 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: rgb(65, 7, 65) 5px solid;
+    border: rgb(190, 153, 190) 5px solid;
 }
 
 .content {
