@@ -10,70 +10,24 @@ body {
     display: flex;
     flex-direction: column;
     color: #413c69;
-    
-}
-
-#menu ul {
-    padding:0px;
-    margin:0px;
-    background-color:#c3bef0;
-    list-style:none;
-    position: absolte;
-    padding-right: ;
-}
-
-#menu ul li {
-     display: inline; 
-     padding: 3px 15px;
-     display: inline-block;
-     text-decoration: none;
-}
-
-#menu ul li a:hover {
-    background-color:#cadefc;
-    color: #6D6D6D;
-}
-
-.carpa {
-    color:#552244 ;
-    padding-top: 0;
-    padding-bottom: 0;
+    height: 100vh;
 }
 
 .gandalfo {
-    position: left;
-    margin:  auto;
+    z-index: 1;
+    margin-left: 6px;
+    margin-top: 6px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     transition: all 100ms;
     border: #596157 solid 4px;
     border-radius: 50%;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    flex: 1;
-    text-align: justify;
 }
 
 .description strong {
     margin: 10px;
     font-size: 50px;
-    animation-name: colorchange;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes colorchange {
-    0% {color: #413c69}
-    50% {color: #524fa3}
-    100% {color: #413c69}
-
 }
 
 .description p {
@@ -81,22 +35,32 @@ body {
     line-height: 30px;
 }
 
-.description h1, .description strong, .description .carpa, .description h2 {
+.description h3 {
+    margin: 20px 0;
+}
+
+.description a {
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px 10px 0 0;
+    border: #222 solid 1px;
+    border-radius: 4px;
+    color: #FFF;
+    background-color: #222;
+}
+
+.description a:hover {
+    background-color: #413c69;
+    box-shadow: #111 3px 3px 4px;
+}
+
+.description strong, .description h2 {
     text-align: center;
     padding: 20px;
 }
 
-.description h1 {
-    padding-bottom: 0;
-    z-index: 1;
-}
-
-.description strong {
-    padding-top: 0;
-}
-
 .eu {
-    margin: 0 20px;
+    margin-left: 100px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -106,12 +70,15 @@ body {
 .content {
     display: flex;
     flex-direction: row;
-    flex: 1;
-    height: 92vh;
     font-size: 18px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0;
+}
+
+.nome {
+    justify-content: center;
+    display: flex;
+    border-bottom: #FFF solid 2px;
 }
 
 footer {
@@ -121,10 +88,4 @@ footer {
     margin-top: auto;
     margin-bottom: 0;
     text-align: center;
-}
-
-.nome {
-    justify-content: center;
-    display: flex;
-    border-bottom: #FFF solid 2px;
 }
